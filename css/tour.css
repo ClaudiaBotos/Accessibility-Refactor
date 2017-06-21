@@ -1,0 +1,89 @@
+/* Tour page styles */
+
+pre {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.pick{
+  width: 35px;
+  height:0%;
+  padding: 10px;
+  padding-bottom: 0;
+  
+
+}
+
+
+.filter {
+  position: relative;
+  -webkit-filter: contrast(161%) brightness(160%) saturate(158%) sepia(14%) invert(17%) hue-rotate(332deg);
+  filter: contrast(161%) brightness(160%) saturate(158%) sepia(14%) invert(17%) hue-rotate(332deg);
+}
+
+
+caption {
+    text-align: left;
+}
+
+
+.table {
+	margin: 0 auto;
+    text-align: center;
+    
+   }
+
+td {
+   
+   padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+th {
+
+padding: 5px;
+color:#aea8d3;
+
+}
+
+
+
+
+.heading{
+ color:#aea8d3;
+  display: inline-block;
+  padding-bottom: 10px;
+  
+  
+
+}
+
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+    
+    
+    td {
+	padding-bottom: 5px ;
+	padding-right: 20px;
+}
+
+    
+    .pick {
+        width: 40px;
+    }
+    
+    
+    caption {
+    text-align: center;
+}
+
+
+}
+
+
+
+

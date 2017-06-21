@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav class="main-nav" role='navigation'>
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role='banner'>
+     <h1 class='banner'> ACCESSIBLE FROG </h1>
+    <h2 class='banner-text'> we make awesome music </h2>
+    </header>
+
+    <main role='main'>
+      
+      <div class=" clearfix card">
+        <div class=" clearfix flex">
+          <img class=" clearfix photo" src= "img/concert01.jpg" alt=''>
+          <div class=" clearfix container">
+            <form class = " clearfix survey" role='form'>
+
+            <fieldset class=' clearfix first-survey'>
+             <legend class=' clearfix legend'>Survey</legend>
+              <label class=' clearfix band-label'>Who is your favorite band member:</label>
+              <input type="radio" id='john' name="res" value="john"> 
+              <label for='john' class='radio_label'>John</label>
+              <input type="radio" id='hazzard' name="res" value="hazzard">
+              <label for='hazzard' class='radio_label'> Hazzard</label>
+              <input type="radio" id='bob' name="res" value="bob"> 
+              <label for='bob' class='radio_label'>Bob</label>
+              <input type="radio" id='sally' name="res" value="sally">
+              <label for='sally' class='radio_label'> Sally</label>
+
+              <label aria-describedby='favoriteAlbum' for='albums' class='clearfix albums-label'>What is your favorite album:   </label>
+              <select id="albums" name="select">
+                <option value='' disabled selected >Choose Album</option>
+                <option value="1">A Day of Old</option>
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Midnight Fires</option>
+                <option value="7">Music Of My Life</option>
+                <option value="8">Party For An Angel</option>
+                <option value="9">Song For Yesterday </option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>
+              </select>
+          
+ <p id='favoriteAlbum'> Choose your favorite album from the drop-down list!</p>
+
+              <label class='song-label clearfix' for='text'>What is your favorite song:</label>
+              <textarea id='text' name='favorite-song'></textarea>
+              </fieldset>
+              </form>
+            
+          </div>
+        </div>
+      </div>
+               
+      
+      <div class=" clearfix card">
+        <div class=" clearfix flex">
+          <img class="photo" src= "img/the_band.jpg" alt=''>
+            <form role='form'>
+          <fieldset class='second-survey clearfix'>
+     <legend class="legend clearfix"> Newslettter </legend>
+                <label for='name'>Name:</label>
+                 <input id='name' type ="text" name="textfield" required="required" placeholder='Required'>
+                 <label for='email'>Email:</label> 
+                 <input id='email' type ="email" name="textfield" required="required" placeholder='Required'>
+                  <label for='retype-email'>Retype Email:</label>
+                  <input id='retype-email' type ="email" name="textfield" required="required" placeholder='Required'>
+                  <button aria-describedby='formSubmit' type="submit">Sign Up</button>
+                  <p id='formSubmit'> The button submits the info you gave such as name and email for the newsletter!</p>
+
+                  </fieldset>
+             
+            </form>
+            
+        </div>
+      </div>
+    </main>
+
+    <footer role='contentinfo'>
+      <ul>
+         <li><a href="#" class="social twitter social-filter" title='twitter logo' ></a></li>
+        <li><a href="#" class="social youtube social-filter" title='youtube logo' ></a></li>
+        <li><a href="#" class="social spotify social-filter" title='spotify logo' ></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
